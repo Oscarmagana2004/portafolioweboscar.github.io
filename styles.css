@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: aqua;
+  border: none;
+  color:  #191c32;
+  padding: 5px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 80px 1280px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.button6 {
+  color: white;
+  font-weight:  bold;
+  font-size: 75%; 
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vw;
+  background-color: #191c32;
+  color: #ffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.brand {
+  margin-top: -8px;
+}
+
+.brand span {
+  color:aqua
+}
+
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  
+}
+
+.menu li{
+  list-style: none;
+}
+
+.menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.menu .active{
+  color: aqua;
+}
+
+.menu a:hover {
+  background-color:aqua;
+  color:#191c32;
+  transition: ease-in 0.3s;
+}
+
+.main {
+  margin:  0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  margin-top: 15px;
+}
+
+
+span{
+  color:aqua;
+}
+
+.download-cv{
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 20px;
+  margin-top: 35px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+}
+
+.download-cv:hover {
+  background-color: #ffff;
+  box-shadow: none;
+  transition: ease-in 0.3s;
+}
+
+.main img{
+  width: 350px;
+  border: 7px solid aqua;
+  height: 520px;
+  margin-left: 100px;
+}
+
+.about { 
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+  grid-column: 1/5;
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 3em; 
+}
+
+.about-info h2 {
+  font-size:  2em;
+  color:#191c32;
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: aqua;
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
+
+.about p {
+  margin-bottom: 1em;
+}
+
+.portfolio {
+  width: 100vw;
+  background-color: #191c32;
+  color: #ffff;
+}
+
+.portfolio-headings {
+  width: 100vw;
+  padding: 5em;
+}
+
+.portfolio-headings h2 {
+  font-size: 2.5em;
+}
+
+.portfolio .container {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  color: #ffff;
+  height: 350px;
+  background-color: #101e4b;
+  margin: 2em;
+}
+
+.card_img1 {
+  width: 100%;
+  height: 150px;
+  background-image: url(../img/micolonia.jpg);
+  background-size: cover;
+}
+
+.card_img2 {
+  width: 100%;
+  height: 150px;
+  background-image: url(../img/clubdeheroes.jpg);
+  background-size: cover;
+}
+
+.card_img3 {
+  width: 100%;
+  height: 150px;
+  background-image: url(../img/zoomprogram.jpg);
+  background-size: cover;
+}
+
+
+.card_title {
+  padding: 20px;
+}
+
+.card_project-links {
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.card_project-links a {
+  color:#ffff;
+  text-decoration: none;
+}
+
+.card_project-links i {
+  font-size: 1.5em;
+}
+
+.card .project-details {
+  margin: 0 auto;
+  margin: 1em;
+  width: 70%;
+}
+
+.card .project-details a {
+  text-decoration: none;
+  color: #191c32;
+  text-transform: uppercase;
+}
+
+.project-details-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.Todo{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  }
+  
+  /*Tamaño de todo*/
+  .box{
+      flex: 1;
+      overflow: hidden;
+      margin: 8px;
+      line-height: 0;
+      transition: all 2s;
+  }
+  
+  /*Tamaño de imagenes*/
+  .box > img {
+      width: 200%;
+      height: calc(100% - 10vh);
+      object-fit: cover;
+      transition: all 2s;
+      align-content: center;
+  }
+  
+  /*Decoración para el texto de abajo*/
+  .box > span {
+      font-size: 35px;
+      display: block;
+      text-align: center;
+      height: 10vh;
+      line-height: 2.5;
+  }
+  
+  /*Animaciones*/
+  .box:hover{
+      flex: 50%;
+  }
+  
+  .box:hover > img {
+      width: 100%;
+      height: 100%;
+  }
+
+
+
+.contact-section {
+  justify-items: center;
+}
+
+.contact-headings h2 {
+  font-size: 3em;
+}
+
+.container-contact {
+  padding: 3em;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+
+.form input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffff;
+  color:#ffff;
+}
+
+.form textarea {
+  height: 150px;
+  background: none;
+  color:#ffff;
+  padding: 1.5em;
+  border: 1px solid #ffff;
+}
+
+.btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border: none;
+  text-transform: uppercase;
+  background-color: aqua;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+}
+
+.btn-submit:hover {
+  background-color: #ffff;
+  box-shadow: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  background-color: aqua;
+}
+
+.footer-content h2{
+  font-size: 3em;
+  color: #191c32;
+}
+
+.footer-content h5,
+.social-network i{
+  font-size: 1.5em;
+  color: #191c32;
+  align-content: center;
+}
+
+.social-network {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+/*Boton */
+
+.boton.container{
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width: 6.6rem;
+  height: 6.6;
+  z-index: -1;
+}
+
+.go-top-button{
+  width: 0rem;
+  height: 0rem;
+  background: #2071b2;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; 
+}
+
+.go-top-button i{
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #ffffff;
+  transition: .2s;
+
+}
+
+.show{
+  z-index: 10;
+}
+
+.show .go-top-button{
+  animation: popop .3s ease-in-out;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: 11;
+}
+
+.show i{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popop{
+  0%{
+    width: 0rem;
+    height: 0rem;
+  }
+  50%{
+    width: 8rem;
+    height: 8rem;
+  }
+  100%{
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+}
